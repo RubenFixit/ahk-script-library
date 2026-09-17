@@ -1,9 +1,9 @@
 # AutoHotkey Script Library
 
 A public collection of general-purpose AutoHotkey v2 scripts. The repository is
-also the reference multi-script collection for AutoHotkey Module Manager.
+also the reference multi-script collection for AutoHotkey Script Manager.
 
-## Use with AutoHotkey Module Manager
+## Use with AutoHotkey Script Manager
 
 Add this repository and select `ahk-library.toml`. The manifest exposes each
 module independently, so users can enable only the scripts they want.
