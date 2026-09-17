@@ -6,7 +6,7 @@ global TypeClipboardFocusDelayMs := 300
 ^+v::
 {
     global TypeClipboardTargetTimeoutMs, TypeClipboardFocusDelayMs
-    clipboardContent := RegExReplace(A_Clipboard, "[\r\n]+,\n")
+    clipboardContent := RegExReplace(A_Clipboard, "\r\n", "\n")
     if (clipboardContent = "") {
         MsgBox("The clipboard does not contain any text.", "Type Clipboard", "Icon!")
         return

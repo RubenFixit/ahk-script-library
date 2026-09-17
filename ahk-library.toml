@@ -4,6 +4,13 @@ description = "General-purpose AutoHotkey v2 utilities"
 requires_autohotkey = ">=2.0"
 
 [[scripts]]
+id = "clipboard-hotkeys"
+name = "Clipboard Hotkeys"
+path = "scripts/clipboard-hotkeys.ahk"
+type = "include"
+default_enabled = false
+
+[[scripts]]
 id = "clipboard-qr"
 name = "Clipboard to QR"
 path = "scripts/clipboard-to-qr.ahk"
@@ -11,9 +18,51 @@ type = "include"
 default_enabled = true
 
 [[scripts]]
+id = "date-hotstrings"
+name = "Date and Time Hotstrings"
+path = "scripts/date-hotstrings.ahk"
+type = "include"
+default_enabled = false
+
+[[scripts]]
+id = "edge-hotkeys"
+name = "Edge Tab Switching Bridge"
+path = "scripts/edge-hotkeys.ahk"
+type = "include"
+default_enabled = false
+
+[[scripts]]
+id = "keep-awake"
+name = "Keep Awake"
+path = "scripts/keep-awake.ahk"
+type = "standalone"
+default_enabled = false
+
+[[scripts]]
+id = "key-history"
+name = "Key History Viewer"
+path = "scripts/key-history.ahk"
+type = "standalone"
+default_enabled = false
+
+[[scripts]]
 id = "payment-fee-calculator"
 name = "Payment Processing Fee Calculator"
 path = "scripts/payment-fee-calculator.ahk"
+type = "include"
+default_enabled = false
+
+[[scripts]]
+id = "taskbar-hotkeys"
+name = "Taskbar Hotkeys"
+path = "scripts/taskbar-hotkeys.ahk"
+type = "include"
+default_enabled = false
+
+[[scripts]]
+id = "toggle-mouse-cursor"
+name = "Toggle Mouse Cursor"
+path = "scripts/toggle-mouse-cursor.ahk"
 type = "include"
 default_enabled = false
 

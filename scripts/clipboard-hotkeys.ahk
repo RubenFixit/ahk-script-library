@@ -7,11 +7,14 @@
     lines := StrSplit(A_Clipboard, ",")
     MsgBox("Found " . lines.Length . " lines")
 
-    for _, line in lines
+    for index, line in lines
     {
         SendText(line)
-        Send("{Tab}{Space}")
-        Sleep(1000)
+        if (index < lines.Length)
+        {
+            Send("{Tab}{Space}")
+            Sleep(1000)
+        }
     }
 }
 

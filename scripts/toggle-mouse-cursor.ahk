@@ -1,22 +1,22 @@
 #Requires AutoHotkey v2.0
 
-; Win + Alt + M: toggle system cursor visibility.
-#!m::
+; Ctrl + Alt + M: toggle system cursor visibility.
+^!m::
 {
     static cursorVisible := true
     static cleanupRegistered := false
 
     if !cleanupRegistered
     {
-        OnExit(RestoreSystemCursor)
+        OnExit(ToggleMouseCursor_Restore)
         cleanupRegistered := true
     }
 
     cursorVisible := !cursorVisible
-    SystemCursor(cursorVisible)
+    ToggleMouseCursor_SetVisible(cursorVisible)
 }
 
-SystemCursor(visible := true)
+ToggleMouseCursor_SetVisible(visible := true)
 {
     static SPI_SETCURSORS := 0x0057
     static cursorIds := [
@@ -75,7 +75,7 @@ SystemCursor(visible := true)
     }
 }
 
-RestoreSystemCursor(exitReason, exitCode)
+ToggleMouseCursor_Restore(exitReason, exitCode)
 {
-    SystemCursor(true)
+    ToggleMouseCursor_SetVisible(true)
 }
