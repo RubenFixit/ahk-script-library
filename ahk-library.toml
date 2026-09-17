@@ -1,0 +1,32 @@
+[library]
+name = "AutoHotkey Script Library"
+description = "General-purpose AutoHotkey v2 utilities"
+requires_autohotkey = ">=2.0"
+
+[[scripts]]
+id = "clipboard-qr"
+name = "Clipboard to QR"
+path = "modules/clipboard-to-qr.ahk"
+type = "include"
+default_enabled = true
+
+[[scripts]]
+id = "payment-fee-calculator"
+name = "Payment Processing Fee Calculator"
+path = "modules/payment-fee-calculator.ahk"
+type = "include"
+default_enabled = false
+
+[[scripts]]
+id = "type-clipboard"
+name = "Type Clipboard Text"
+path = "modules/type-clipboard.ahk"
+type = "include"
+default_enabled = false
+
+[[scripts]]
+id = "windows-explorer"
+name = "Windows Explorer Helpers"
+path = "modules/windows-explorer.ahk"
+type = "include"
+default_enabled = false
